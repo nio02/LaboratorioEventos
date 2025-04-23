@@ -8,7 +8,7 @@ function addTask(task){
 
     const botonCompletar = document.createElement('button');
     botonCompletar.textContent = "Completar";
-    
+
     //Se debe agregar el evento aqui, ya que despues no lo reconocera
     botonCompletar.addEventListener('click', () => {  
         if (texto){
@@ -17,7 +17,7 @@ function addTask(task){
     });
 
     const texto = document.createElement('p');
-    texto.classList.add('tarea-incompleta');
+    texto.classList.add('tareaIncompleta');
     texto.textContent = task;
 
     const botonEliminar = document.createElement('button');
